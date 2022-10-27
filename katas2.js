@@ -13,7 +13,7 @@ function multiply(c, b) {
 function power(x, n) {
   let potencia = x;
   for (let i = 1; i < n; i++) {
-    potencia = multiply(potencia, n);
+    potencia = multiply(potencia, x);
   }
   return potencia;
 }
@@ -23,5 +23,5 @@ function factorial(v) {
   for (let i = v; i >= 1; i--) {
     fatorial = multiply(fatorial, i);
   }
-  return fatorial;
+  return fatorial;  
 }
